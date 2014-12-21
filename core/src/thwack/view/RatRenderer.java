@@ -4,10 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 import thwack.Constants;
+import thwack.model.entities.Damageable.DamageState;
+import thwack.model.entities.Movable.Direction;
 import thwack.model.entities.mobs.Mob.State;
 import thwack.model.entities.mobs.Rat;
-import thwack.model.entity.Damageable.DamageState;
-import thwack.model.entity.Movable.Direction;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;

@@ -1,6 +1,6 @@
 package thwack.model.entities.projectiles;
 
-import thwack.model.entity.Entity;
+import thwack.model.entities.Entity;
 
 import com.badlogic.gdx.physics.box2d.BodyDef;
 import com.badlogic.gdx.physics.box2d.CircleShape;

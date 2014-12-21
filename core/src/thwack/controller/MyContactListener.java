@@ -1,11 +1,11 @@
 package thwack.controller;
 
+import thwack.model.entities.Entity;
 import thwack.model.entities.mobs.Mob;
 import thwack.model.entities.player.Player;
 import thwack.model.entities.projectiles.Projectile;
 import thwack.model.entities.weapons.Weapon;
 import thwack.model.entities.worldobjects.Wall;
-import thwack.model.entity.Entity;
 
 import com.badlogic.gdx.physics.box2d.Body;
 import com.badlogic.gdx.physics.box2d.Contact;

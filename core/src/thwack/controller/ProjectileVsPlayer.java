@@ -1,8 +1,8 @@
 package thwack.controller;
 
+import thwack.model.entities.Stateable.EntityState;
 import thwack.model.entities.player.Player;
 import thwack.model.entities.projectiles.Projectile;
-import thwack.model.entity.Stateable.EntityState;
 
 import com.badlogic.gdx.physics.box2d.Contact;
 import com.badlogic.gdx.physics.box2d.ContactImpulse;

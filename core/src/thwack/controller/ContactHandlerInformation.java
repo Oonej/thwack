@@ -1,6 +1,6 @@
 package thwack.controller;
 
-import thwack.model.entity.Entity;
+import thwack.model.entities.Entity;
 
 /**
  * @author Daniel Holderbaum

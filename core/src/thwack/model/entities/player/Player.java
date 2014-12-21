@@ -1,10 +1,10 @@
 package thwack.model.entities.player;
 
 import thwack.Constants;
+import thwack.model.entities.Damageable;
+import thwack.model.entities.Movable;
 import thwack.model.entities.weapons.Sword;
 import thwack.model.entities.weapons.Weapon;
-import thwack.model.entity.Damageable;
-import thwack.model.entity.Movable;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;

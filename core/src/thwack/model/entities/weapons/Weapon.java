@@ -1,7 +1,7 @@
 package thwack.model.entities.weapons;
 
-import thwack.model.entity.Entity;
-import thwack.model.entity.Updateable;
+import thwack.model.entities.Entity;
+import thwack.model.entities.Updateable;
 
 public abstract class Weapon extends Entity implements Updateable {
 

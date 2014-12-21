@@ -1,8 +1,8 @@
 package thwack.model.entities.projectiles;
 
-import thwack.model.entity.Entity;
-import thwack.model.entity.Movable;
-import thwack.model.entity.Updateable;
+import thwack.model.entities.Entity;
+import thwack.model.entities.Movable;
+import thwack.model.entities.Updateable;
 
 public abstract class Projectile extends Movable implements Updateable{
 	

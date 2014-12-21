@@ -1,7 +1,7 @@
 package thwack.model.entities.mobs;
 
-import thwack.model.entity.Damageable;
-import thwack.model.entity.Movable;
+import thwack.model.entities.Damageable;
+import thwack.model.entities.Movable;
 
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.World;

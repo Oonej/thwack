@@ -1,6 +1,6 @@
 package thwack.controller;
 
-import thwack.model.entity.Entity;
+import thwack.model.entities.Entity;
 
 import com.badlogic.gdx.physics.box2d.Contact;
 import com.badlogic.gdx.physics.box2d.ContactImpulse;

@@ -4,9 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 import thwack.Constants;
+import thwack.model.entities.Movable.Direction;
 import thwack.model.entities.player.Player;
 import thwack.model.entities.player.Player.State;
-import thwack.model.entity.Movable.Direction;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
