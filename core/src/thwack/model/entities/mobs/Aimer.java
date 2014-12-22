@@ -4,6 +4,7 @@ package thwack.model.entities.mobs;
 import thwack.model.entities.player.Player;
 import thwack.model.entities.projectiles.FireBall;
 import thwack.model.entities.projectiles.FireOrbital;
+import thwack.model.entities.worldobjects.spawnables.BonFire;
 
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.Body;
@@ -20,6 +21,7 @@ public class Aimer extends Mob {
 	private Body target;
 
 	private float defenseTimer = 0;
+	private float bonfireTimer = 0;
 	
 	public Aimer(World world, Vector2 pos, Vector2 size)
 	{
@@ -48,6 +50,8 @@ public class Aimer extends Mob {
 	public void update(float deltaTime) {
 		this.increaseDamageStateTime(deltaTime);
 		this.increaseStateTime(deltaTime);
+		
+		
 		moveLogic(3f);
 	}
 	
@@ -93,12 +97,11 @@ public class Aimer extends Mob {
 							new FireOrbital(world, this, deg);
 							deg += 72;
 						}
+						
+						defenseTimer = 0;
 					}
 					
 				}
-				
-				defenseTimer = 0;
-				
 			}
 			
 			
@@ -124,11 +127,17 @@ public class Aimer extends Mob {
 				FireBall fb = new FireBall(world, this);
 				fb.shootToward(target.getPosition().x, target.getPosition().y);
 				setStateTime(0);
+				
+				if(bonfireTimer > 1000)
+				{
+					new BonFire(world, target.getPosition());
+					bonfireTimer = 0;
+				}
 			}
 		}
 		
 		defenseTimer += deltaTime;
-		
+		bonfireTimer += deltaTime;
 		
 
 		move(velocity);

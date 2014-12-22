@@ -47,8 +47,8 @@ public class FireOrbital extends Projectile{
 		revoluteJointDef.bodyB = entityBody;
 		revoluteJointDef.enableMotor = true;
 		revoluteJointDef.collideConnected = false;
-		revoluteJointDef.motorSpeed = 360f * MathUtils.degreesToRadians;
-		revoluteJointDef.maxMotorTorque = 20f;
+		revoluteJointDef.motorSpeed = 180f * MathUtils.degreesToRadians;
+		revoluteJointDef.maxMotorTorque = 1f;
 		revoluteJointDef.localAnchorB.set(entityBody.getLocalCenter().add(MathUtils.sin(deg * MathUtils.degreesToRadians)/-lengthofOrbital *3, MathUtils.cos(deg * MathUtils.degreesToRadians)/-lengthofOrbital *3));
 		revoluteJointDef.localAnchorA.set(shooter.getBody().getLocalCenter());
 		
